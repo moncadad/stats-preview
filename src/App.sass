@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap')
+
+// AYOUT: - Mobile: 375px - Desktop: 1440px
+
+// ## Colors:  Primary
+$very-dark-blue: hsl(233, 47%, 7%) //MAIN BG
+$dark-desaturate-blue: hsl(244, 38%, 16%) //CARD BG
+$soft-violet: hsl(277, 64%, 61%) //ACCENT
+
+//### Neutral
+$white: hsl(0, 0%, 100%) //MAIN HEADING STATS
+$main-transparent-white: hsla(0, 0%, 100%, 0.75) //MAIN PARAGRAPH
+$heading-transparent-white: hsla(0, 0%, 100%, 0.6) //STAT HEADING
+
+//Typography
+$font-size: 15px
+
+// ### Font
+$font-inter: 'Inter', sans-serif //400, 700
+$font-lexend: 'Lexend Deca', sans-serif //400
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  background-color: $very-dark-blue
+  font-family: $font-inter
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  height: 100vh
+  color: $white
+
+.wrapper
+  background-color: $dark-desaturate-blue
+  display: flex
+  flex-direction: column
+  margin: 22px
+  border-radius: 1rem
+  // max-width: 328px
+  max-width: 1112px
+
+  .img
+    background-image: linear-gradient(0deg, hsla(277, 64%, 61%, .3), hsla(277, 64%, 61%, .3)), url('/images/image-header-mobile.jpg')
+    height: 240px
+    width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    border-radius: 1rem 1rem 0 0
+  .main
+    margin: 50px 38px 0 38px
+    max-width: 572px
+
+    h1
+      font-size: 26px
+      padding-bottom: 20px
+
+      span
+        color: $soft-violet
+
+    p
+      font-size: $font-size
+      color: $main-transparent-white
+      line-height: 1.6
+      padding-bottom: 40px
+
+  .stats
+    display: flex
+    flex-direction: column
+    li
+      list-style: none
+      h2
+        font-size: 22px
+        font-weight: 700
+      p
+        font-size: $font-size
+        color: $heading-transparent-white
+@media (min-width: 700px)
+  .wrapper
+    flex-direction: row-reverse
+    justify-content: space-between
+    width: 100%
+
+    .img
+      background-image: linear-gradient(0deg, hsla(277, 64%, 61%, .3), hsla(277, 64%, 61%, .3)), url('/images/image-header-desktop.jpg')
+      height: 447px
+      width: 540px
+      background-repeat: no-repeat
+      background-size: cover
+      -moz-background-size: cover
+      -o-background-size: cover
+      background-size: cover
+      border-radius: 0 1rem 1rem 0
+
+    .main
+      max-width: 380px
+      margin: 70px 70px 0 70px
+      text-align: start
+
+      h1
+        font-size: 34px
+        padding-bottom: 30px
+
+      p
+        line-height: 2
+        padding-bottom: 56px
+
+      .stats
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+        p
+          font-size: 15px
