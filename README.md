@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/profile/moncadad/solutions)
+- Live Site URL: [Add live site URL here](https://tourmaline-faloodeh-9852a1.netlify.app/)
 
 ## My process
 
@@ -88,4 +88,4 @@ Also reducing my time spent per project atleast by an hour. This one took me nea
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/moncadad)
+- Frontend Mentor - [@moncadad](https://www.frontendmentor.io/profile/moncadad)
